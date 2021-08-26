@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    width: 100%;
+}
+  
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170;
+}
+
+header {
+    background-color: #192a56;
+    height: 65px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.icon-menu {
+    float: right;
+    font-size: 10px;
+    padding: 2px 0;
+    display: none;
+}
+
+.header-kiri {
+    float: left;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation-name: bunglon;
+    animation-duration: 5s;
+}
+
+@keyframes bunglon {
+    0% {color: white;}
+    25% {color: red;}
+    50% {color: yellow;}
+    75% {color: red;}
+    100% {color: white;}
+}
+
+.header-kanan {
+    float: right;
+}
+
+.header-kanan a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.header-kanan a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main {
+    padding: 50px 0 50px 0;
+    background-image: url(img/Bg.jpg);
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+    border-bottom: 2px solid #eee;
+    width: 100%;
+}
+
+.logo {
+    height: 500px;
+    width: 750px;
+    margin-top: 30px;
+}
+
+.main p {
+    font-size: 25px;
+}
+
+.link {
+    padding: 10px 20px;
+    display: inline;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: -70px;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.appstore {
+    height: 200px;
+    width: 200px;
+}
+
+.playstore {
+    height: 200px;
+    width: 250px;
+}
+
+.about {
+    text-align: center;
+    background-color: #eee;
+    padding: 25px 30px 0 30px;
+    width: 100%;
+}
+
+.heading {
+    font-size: 30px;
+}
+
+.logo-about{
+    margin-top: -100px;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+.maintenance {
+    text-align: left;
+    padding: 10px 0 20px 30px;
+}
+
+.body-content {
+    text-align: center;
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom: 1px solid black;
+    height: 500px;
+}
+
+.content-title {
+    font-size: 30px;
+    padding: 25px 30px 0 30px;
+}
+
+.project-content {
+    float: left;
+    width: 25%;
+}
+
+.content-icon {
+    position: relative;
+}
+
+.content-icon img {
+    height: 200px;
+    width: 200px;
+}
+
+.contact {
+    background-color: #eee;
+    padding: 30px 30px 0 30px;
+    border-bottom: 1px solid black;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.form { 
+    padding-top: 10px; 
+    padding-bottom: 30px;
+} 
+    
+input, textarea {             
+    width: 400px;             
+    margin-top: 5px;             
+    margin-bottom: 20px;             
+    padding: 20px;             
+    font-size: 18px;             
+    border: 1px solid black; 
+} 
+   
+.submit{ 
+    background-color: #4cd137; 
+    color: #f5f6fa; 
+    box-shadow: 0 7px green; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}  
+   
+.submit:active { 
+    box-shadow: none; 
+    position:relative; 
+    top: 7px 
+} 
+
+.wajib { 
+    font-style: italic; 
+    color: red;
+}
+
+footer{
+    background: #192a56;
+    height: auto;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color.4s ease;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding:20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity:.4;
+    font-weight: 200;
+}
